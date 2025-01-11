@@ -1,5 +1,4 @@
 FROM python:3.9-slim
-
 # Set the working directory
 WORKDIR /app
 
@@ -10,6 +9,5 @@ COPY key.pem /app/key.pem
 
 # Install Flask
 RUN pip install flask
-
 # Run the server
 CMD ["python", "server.py"]

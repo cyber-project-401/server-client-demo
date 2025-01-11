@@ -1,5 +1,4 @@
-version: "3.8"
-
+ersion: "3.8"
 services:
   server:
     build:
@@ -11,7 +10,6 @@ services:
       default:
         aliases:
           - server
-
   client:
     build:
       context: ./client
@@ -22,3 +20,4 @@ services:
       default:
         aliases:
           - client
+
