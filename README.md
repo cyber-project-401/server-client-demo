@@ -4,7 +4,7 @@ This project sets up a simple TLS-enabled server and a client using Docker Compo
 
 ## How to Run the Project
 
-1. **Generate the TLS Certificate and Key**:
+1. **Generate the TLS Certificate and Key**: (Optional - Only if you want new keys)
    ```bash
    openssl req -new -x509 -days 365 -nodes -out server/cert.pem -keyout server/key.pem -subj "/CN=localhost"
    ```
