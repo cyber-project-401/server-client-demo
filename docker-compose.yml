@@ -7,6 +7,8 @@ services:
     container_name: tls_server
     ports:
       - "8443:8443"
+    environment:
+      - SSLKEYLOGFILE=/tmp/sslkey.log
     networks:
       default:
         aliases:
