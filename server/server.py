@@ -1,5 +1,9 @@
-from flask import Flask, jsonify
 import os
+
+# Enable TLS session key logging
+os.environ["SSLKEYLOGFILE"] = "/tmp/sslkey.log"
+
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
