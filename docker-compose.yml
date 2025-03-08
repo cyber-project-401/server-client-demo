@@ -26,3 +26,5 @@ services:
       default:
         aliases:
           - client
+    volumes:
+      - ./sslkey.log:/tmp/sslkey.log  # <--- Mount key log file to the host
